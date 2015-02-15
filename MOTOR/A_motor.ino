@@ -40,7 +40,7 @@
   digitalWrite(in3,HIGH); //when in3 and in4 are of different polarity then only motor 2 moves
   digitalWrite(in4,LOW);
   }
-  if(input1==0 && input2==1)
+  else if(input1==0 && input2==1)
   {                       // when input2 is 1 and input 1 is low ,we move the motor backwards
   digitalWrite(e1,HIGH);  //enable1 is used to switch on the input pins in1 and in2
   digitalWrite(e2,HIGH);  //enable2 is used to switch on the input pins in3 and in4
