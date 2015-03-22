@@ -15,20 +15,20 @@
 // http://learningembedded.com / 
 
 int count;
-int  arr[10]={0x3f,0x06,0x5b,0x4f,0x66,0x6d,0x7d,0x07,0x7f,0x67}; # values for each digit stored in an array
+int  arr[10]={0x3f,0x06,0x5b,0x4f,0x66,0x6d,0x7d,0x07,0x7f,0x67}; // values for each digit stored in an array
 
 void setup()
 {
     for( count= 0; count < 7; count ++ )
     {
-     pinMode(count, OUTPUT);                                      # initializing all pins till 6 as output
+     pinMode(count, OUTPUT);                                      // initializing all pins till 6 as output
     }
 }
 void loop()
 {
   for(count= 0; count < 10; count++)
     {
-      PORTD = arr[count];                                         # put the value of array to the 7 segment using index as count
+      PORTD = arr[count];                                         // put the value of array to the 7 segment using index as count
       delay(300);
     }
  
